@@ -1,0 +1,76 @@
+{
+  "products":[
+    {
+      "id": 1,
+      "name": "iphone 12",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33405a",
+      "price": 999,
+       "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+
+    },
+    {
+      "id": 2,
+      "name": "iphone 12 pro",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33305a",
+      "price": 654,
+      "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+    },
+    {
+      "id": 3,
+      "name": "iphone 11",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33605a",
+      "price": 665,
+      "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+    },
+    {
+      "id": 4,
+      "name": "iphone 11 pro",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33555a",
+      "price": 999,
+      "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+    },
+    {
+      "id": 5,
+      "name": "iphone 14",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33405a",
+      "price": 2600,
+      "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"    },
+    {
+      "id": 6,
+      "name": "iphone 14 pro",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33505a",
+      "price": 2857,
+      "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+    },
+    {
+      "id": 7,
+      "name": "iphone 13",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33505a",
+      "price": 1702,
+      "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+    },
+    {
+      "id": 8,
+      "name": "iphone 13 pro",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33505a",
+      "price": 2100,
+      "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+    },
+    {
+      "id": 9,
+      "name": "iphone 15",
+      "decs": "Apple iphone 12th generation",
+      "color": "#33505a",
+      "price": 3455,
+      "imagge": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+    }
+  ]
+}

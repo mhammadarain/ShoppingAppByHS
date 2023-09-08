@@ -1,5 +1,5 @@
 class CatalogModel {
-  static final items = [
+  static List<Item> items = [
     Item(
         id: 01,
         name: "iphone 12 pro",
@@ -7,7 +7,143 @@ class CatalogModel {
         price: 275000,
         color: "#33505a",
         image:
-            "https://www.google.com/search?q=imran+khan+pic&oq=imran&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIJCAMQIxgnGIoFMg0IBBAAGIMBGLEDGIAEMg0IBRAuGIMBGLEDGIAEMg0IBhAAGIMBGLEDGIoFMgoIBxAuGLEDGIAEMgoICBAAGLEDGIAEMg0ICRAuGIMBGLEDGIAE0gEJNzY5MmowajE1qAIAsAIA&sourceid=chrome&ie=UTF-8#vhid=jT9BvKvyiarv2M&vssid=l")
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 01,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 275000,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
   ];
 }
 
@@ -27,4 +163,23 @@ class Item {
     required this.price,
     required this.image,
   });
+
+  factory Item.fromMap(Map<String, dynamic> map) {
+    return Item(
+        id: map["id"],
+        name: map["name"],
+        desc: map["desc"],
+        color: map["color"],
+        price: map["price"],
+        image: map["image"]);
+  }
+
+  toMap() => {
+        "id": id,
+        "name": name,
+        "desc": desc,
+        "color": color,
+        "price": price,
+        "image": image
+      };
 }

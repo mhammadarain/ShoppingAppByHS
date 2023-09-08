@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_null_comparison
+
 import 'package:flutter/material.dart';
 
 import '../models/catalog.dart';
@@ -12,10 +14,10 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Color.fromARGB(255, 224, 224, 247),
+      color: const Color.fromARGB(255, 224, 224, 247),
       child: ListTile(
         onTap: () {
-          print("clicked");
+          // print("clicked");
         },
         leading: Image.network(item.image),
         title: Text(item.name),
@@ -23,7 +25,8 @@ class ItemWidget extends StatelessWidget {
         trailing: Text(
           "\$${item.price}",
           textScaleFactor: 1.2,
-          style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+          style:
+              const TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
         ),
       ),
     );
