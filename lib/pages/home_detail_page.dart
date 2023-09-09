@@ -50,6 +50,13 @@ class HomeDetailPage extends StatelessWidget {
                         .make()
                         .py8(),
                     catalog.desc.text.xl.textStyle(context.captionStyle).make(),
+                    10.heightBox,
+                    SingleChildScrollView(
+                      child: Container(
+                        alignment: Alignment.topLeft,
+                        child: "Item Description".text.bold.xl.make().p16(),
+                      ),
+                    )
                   ],
                 ).py32(),
               ),

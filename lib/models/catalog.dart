@@ -145,6 +145,11 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
   ];
+
+  static Item getbyId(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+
+  static Item getbyPosition(int pos) => items[pos];
 }
 
 class Item {

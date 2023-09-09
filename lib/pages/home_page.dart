@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:mart_app/models/catalog.dart";
 import "package:mart_app/pages/home_detail_page.dart";
+import "package:mart_app/utils/routes.dart";
 // import "package:mart_app/widgets/themes.dart";
 // import "../widgets/drawer.dart";
 import 'dart:convert';
@@ -37,6 +38,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+        backgroundColor: Colors.deepPurpleAccent,
+        child: Icon(Icons.card_travel_sharp),
+      ),
       body: SafeArea(
         child: Container(
           padding: Vx.m32,
@@ -66,7 +72,7 @@ class CatalogList extends StatelessWidget {
       shrinkWrap: true,
       itemCount: CatalogModel.items.length,
       itemBuilder: (context, index) {
-        final catalog = CatalogModel.items[index];
+        final catalog = CatalogModel.getbyPosition(index);
         return InkWell(
             onTap: () => Navigator.push(
                 context,
