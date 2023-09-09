@@ -10,7 +10,7 @@ class CatalogModel {
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
         id: 01,
-        name: "iphone 12 pro",
+        name: "iphone 15 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
         color: "#33505a",

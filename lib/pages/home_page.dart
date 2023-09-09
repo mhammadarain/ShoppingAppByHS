@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:mart_app/models/catalog.dart";
+import "package:mart_app/pages/home_detail_page.dart";
 // import "package:mart_app/widgets/themes.dart";
 // import "../widgets/drawer.dart";
 import 'dart:convert';
@@ -59,7 +60,6 @@ class _HomePageState extends State<HomePage> {
 
 class CatalogList extends StatelessWidget {
   const CatalogList({super.key});
-
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -67,7 +67,12 @@ class CatalogList extends StatelessWidget {
       itemCount: CatalogModel.items.length,
       itemBuilder: (context, index) {
         final catalog = CatalogModel.items[index];
-        return CatalogItem(catalog: catalog);
+        return InkWell(
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => HomeDetailPage(catalog: catalog))),
+            child: CatalogItem(catalog: catalog));
       },
     );
   }
@@ -83,14 +88,17 @@ class CatalogItem extends StatelessWidget {
     return VxBox(
         child: Row(
       children: [
-        Image.network(catalog.image)
-            .box
-            .p1
-            .roundedSM
-            .white
-            .make()
-            .p12()
-            .w32(context),
+        Hero(
+          tag: Key(catalog.id.toString()),
+          child: Image.network(catalog.image)
+              .box
+              .p1
+              .roundedSM
+              .white
+              .make()
+              .p12()
+              .w32(context),
+        ),
         Expanded(
             child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
