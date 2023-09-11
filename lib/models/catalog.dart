@@ -1,4 +1,10 @@
 class CatalogModel {
+  static final catModel = CatalogModel._internal();
+
+  CatalogModel._internal();
+
+  factory CatalogModel() => catModel;
+
   static List<Item> items = [
     Item(
         id: 01,
@@ -146,10 +152,10 @@ class CatalogModel {
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
   ];
 
-   Item getbyId(int id) =>
+  Item getbyId(int id) =>
       items.firstWhere((element) => element.id == id, orElse: null);
 
-   Item getbyPosition(int pos) => items[pos];
+  Item getbyPosition(int pos) => items[pos];
 }
 
 class Item {
