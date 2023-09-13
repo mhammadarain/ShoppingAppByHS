@@ -10,20 +10,36 @@ class CatalogModel {
         id: 01,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
-        price: 275000,
+        price: 2750,
         color: "#33505a",
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 02,
         name: "iphone 15 pro",
         desc: "Apple iphone 12th generation",
-        price: 275000,
+        price: 2999,
         color: "#33505a",
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 03,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 2750,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 04,
+        name: "iphone 12 pro",
+        desc: "Apple iphone 12th generation",
+        price: 2750,
+        color: "#33505a",
+        image:
+            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
+    Item(
+        id: 05,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -31,7 +47,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 06,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -39,7 +55,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 07,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -47,7 +63,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 08,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -55,7 +71,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 09,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -63,7 +79,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 10,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -71,7 +87,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 11,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -79,7 +95,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 12,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -87,7 +103,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 13,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -95,7 +111,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 14,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -103,7 +119,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 15,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -111,7 +127,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 16,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -119,7 +135,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
+        id: 17,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
@@ -127,23 +143,7 @@ class CatalogModel {
         image:
             "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
     Item(
-        id: 01,
-        name: "iphone 12 pro",
-        desc: "Apple iphone 12th generation",
-        price: 275000,
-        color: "#33505a",
-        image:
-            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
-    Item(
-        id: 01,
-        name: "iphone 12 pro",
-        desc: "Apple iphone 12th generation",
-        price: 275000,
-        color: "#33505a",
-        image:
-            "https://www.optimum.com/mobile/sites/default/files/product/apple-iphone14promax-deeppurple-side.png"),
-    Item(
-        id: 01,
+        id: 18,
         name: "iphone 12 pro",
         desc: "Apple iphone 12th generation",
         price: 275000,
