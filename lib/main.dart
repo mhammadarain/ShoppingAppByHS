@@ -4,9 +4,9 @@ import 'package:mart_app/pages/home_page.dart';
 import 'package:mart_app/pages/login_page.dart';
 import 'package:mart_app/utils/routes.dart';
 import 'package:mart_app/widgets/themes.dart';
-import 'package:velocity_x/velocity_x.dart';
 
 void main() {
+  // You can set up any other necessary configurations here.
   runApp(const MyApp());
 }
 

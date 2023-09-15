@@ -1,11 +1,9 @@
 import 'package:mart_app/models/catalog.dart';
-import 'package:mart_app/pages/home_page.dart';
+// import 'package:mart_app/pages/home_page.dart';
 
 class CartModel {
   static final cartModel = CartModel._internal();
-
   CartModel._internal();
-
   factory CartModel() => cartModel;
 
   late CatalogModel _catalog;
@@ -13,7 +11,10 @@ class CartModel {
 
   CatalogModel get catalog => _catalog;
 
+  // get _itemIds => null;
+
   set catalog(CatalogModel newCatalog) {
+    // ignore: unnecessary_null_comparison
     assert(newCatalog != null);
     _catalog = newCatalog;
   }

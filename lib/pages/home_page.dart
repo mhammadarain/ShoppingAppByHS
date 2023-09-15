@@ -1,14 +1,11 @@
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
-import "package:mart_app/models/cart.dart";
 import "package:mart_app/models/catalog.dart";
 import "package:mart_app/pages/home_detail_page.dart";
 import "package:mart_app/utils/routes.dart";
-// import "package:mart_app/widgets/themes.dart";
-// import "../widgets/drawer.dart";
 import 'dart:convert';
-// import "../widgets/item_widget.dart";
 import 'package:velocity_x/velocity_x.dart';
+import "../widgets/add_to_cart.dart";
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -42,7 +39,7 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
         backgroundColor: Colors.deepPurpleAccent,
-        child: Icon(Icons.card_travel_sharp),
+        child: const Icon(Icons.card_travel_sharp),
       ),
       body: SafeArea(
         child: Container(
@@ -125,44 +122,13 @@ class CatalogItem extends StatelessWidget {
               buttonPadding: EdgeInsets.zero,
               children: [
                 "\$${catalog.price}".text.bold.xl.make(),
-                _AddToCart(catalog: catalog)
+                AddToCart(catalog: catalog)
               ],
             ).pOnly(right: 16)
           ],
         ))
       ],
     )).blue100.square(150).roundedSM.make().py16();
-  }
-}
-
-class _AddToCart extends StatefulWidget {
-  final Item catalog;
-  const _AddToCart({
-    super.key,
-    required this.catalog,
-  });
-
-  @override
-  State<_AddToCart> createState() => _AddToCartState();
-}
-
-class _AddToCartState extends State<_AddToCart> {
-  final _cart = CartModel();
-
-  @override
-  Widget build(BuildContext context) {
-    bool isInCart = _cart.item.contains(widget.catalog) ?? false;
-    return ElevatedButton(
-        onPressed: () {
-          if (!isInCart) {
-            isInCart = isInCart.toggle();
-            final catalog = CatalogModel();
-            _cart.catalog = catalog;
-            _cart.add(widget.catalog);
-            setState(() {});
-          }
-        },
-        child: isInCart ? Icon(Icons.done) : "Add to Cart".text.bold.make());
   }
 }
 

@@ -40,7 +40,7 @@ class HomeDetailPage extends StatelessWidget {
               edge: VxEdge.top,
               arcType: VxArcType.convey,
               child: Container(
-                color: Color.fromARGB(255, 229, 229, 226),
+                color: const Color.fromARGB(255, 229, 229, 226),
                 width: context.screenWidth,
                 child: Column(
                   children: [

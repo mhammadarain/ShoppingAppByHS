@@ -1,9 +1,7 @@
 class CatalogModel {
-  static final catModel = CatalogModel._internal();
-
+  static final cartModel = CatalogModel._internal();
   CatalogModel._internal();
-
-  factory CatalogModel() => catModel;
+  factory CatalogModel() => cartModel;
 
   static List<Item> items = [
     Item(
