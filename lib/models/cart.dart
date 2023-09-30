@@ -1,37 +1,52 @@
+import 'dart:async';
+
 import 'package:mart_app/models/catalog.dart';
-// import 'package:mart_app/pages/home_page.dart';
 
 class CartModel {
-  static final cartModel = CartModel._internal();
+  static final CartModel cartModel = CartModel._internal();
   CartModel._internal();
   factory CartModel() => cartModel;
 
   late CatalogModel _catalog;
-  final List<int> _itemIds = [];
+  final Set<int> _itemIds = {};
 
   CatalogModel get catalog => _catalog;
 
-  // get _itemIds => null;
-
   set catalog(CatalogModel newCatalog) {
-    // ignore: unnecessary_null_comparison
     assert(newCatalog != null);
     _catalog = newCatalog;
   }
 
-// get item into cart
-  List<Item> get item => _itemIds.map((id) => _catalog.getbyId(id)).toList();
+  List<Item> get items => _itemIds.map((id) => _catalog.getbyId(id)).toList();
 
-// get total price
-  num get totalPrice => item.fold(0, (total, current) => total = current.price);
-
-  // Add item
-  void add(Item item) {
-    _itemIds.add(item.id);
+  // Calculate the total price of items in the cart
+  double get totalPrice {
+    double total = 0.0;
+    for (var item in items) {
+      total += item.price;
+    }
+    return total;
   }
 
-  // remove Items
+  // Add item to the cart
+  void add(Item item) {
+    _itemIds.add(item.id);
+    updateTotalPrice();
+  }
+
+  // Remove item from the cart
   void remove(Item item) {
     _itemIds.remove(item.id);
+    updateTotalPrice();
+  }
+
+  // Create a stream controller to manage updates to the total price
+  final _cartStreamController = StreamController<double>();
+
+  // Stream getter for the total price
+  Stream<double> get cartStream => _cartStreamController.stream;
+
+  void updateTotalPrice() {
+    _cartStreamController.add(totalPrice);
   }
 }

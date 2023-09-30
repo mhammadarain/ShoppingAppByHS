@@ -18,7 +18,7 @@ class HomeDetailPage extends StatelessWidget {
         alignment: MainAxisAlignment.spaceBetween,
         buttonPadding: EdgeInsets.zero,
         children: [
-          "\$${catalog.price}".text.bold.xl3.red800.make(),
+          catalog.price.text.bold.xl3.red800.make(),
           ElevatedButton(onPressed: () {}, child: "Buy Now".text.bold.make())
               .wh(110, 35)
         ],
@@ -54,7 +54,13 @@ class HomeDetailPage extends StatelessWidget {
                     SingleChildScrollView(
                       child: Container(
                         alignment: Alignment.topLeft,
-                        child: "Item Description".text.bold.xl.make().p16(),
+                        child:
+                            "The latest Apple Pro 16 M2 Max Chip 12 Cores CPU 38 Cores GPU 96GB RAM 2TB SSD GREY  which was recently updated on September 2023."
+                                .text
+                                .bold
+                                .xl
+                                .make()
+                                .p16(),
                       ),
                     )
                   ],
