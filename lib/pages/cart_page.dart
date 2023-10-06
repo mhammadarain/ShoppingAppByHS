@@ -30,25 +30,39 @@ class _CartTotal extends StatelessWidget {
   Widget build(BuildContext context) {
     final cart = CartModel();
     return SizedBox(
-      height: 200,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          "Total:".text.make(),
-          cart.totalPrice.text.xl4.red700.make(),
-          30.widthBox,
-          ElevatedButton(
-                  onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                      content: "Buying not Supported".text.make(),
-                    ));
-                  },
-                  style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.blueGrey)),
-                  child: "Buy".text.make())
-              .w24(context),
-        ],
+      height: 80,
+      child: Container(
+        color: Color(0xffd7d6d6),
+        child: Row(
+
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            "Total:".text.bold.blue900.xl2.make(),
+            cart.totalPrice.text.xl4.blue900.make(),
+            30.widthBox,
+            ElevatedButton(
+                    onPressed: () {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Buying not Supported".text.make(),
+                      ));
+                    },
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                        (Set<MaterialState> states) {
+                      if (states.contains(MaterialState.pressed)) {
+                        // Change the color when the button is pressed
+                        return Color(0xffd7d6d6); // Replace with your desired color
+                      }
+                      // Default color when the button is not pressed or hovered
+
+                      return Color(0xff0d1662); // Replace with your desired color
+                    },
+                  ),
+                ),
+                    child: "Buy".text.make())
+                .w24(context),
+          ],
+        ),
       ),
     );
   }

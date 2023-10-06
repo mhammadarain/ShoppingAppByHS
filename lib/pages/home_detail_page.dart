@@ -17,9 +17,26 @@ class HomeDetailPage extends StatelessWidget {
       bottomNavigationBar: ButtonBar(
         alignment: MainAxisAlignment.spaceBetween,
         buttonPadding: EdgeInsets.zero,
-        children: [
-          catalog.price.text.bold.xl3.red800.make(),
-          ElevatedButton(onPressed: () {}, child: "Buy Now".text.bold.make())
+        children: ["Total:".text.blue900.bold.xl2.make(),catalog.price.text.bold.xl3.blue900.make(),
+          ElevatedButton(onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+              content: "Buying not Supported".text.make(),
+            ));
+          },
+              style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.resolveWith<Color>(
+              (Set<MaterialState> states) {
+                if (states.contains(MaterialState.pressed)) {
+                  // Change the color when the button is pressed
+                  return Color(0xffd7d6d6); // Replace with your desired color
+                  }
+                  // Default color when the button is not pressed or hovered
+
+                return Color(0xff0d1662); // Replace with your desired color
+                  },
+                  ),
+                  ),
+              child: "Buy Now".text.bold.make())
               .wh(110, 35)
         ],
       ).p24(),
@@ -40,7 +57,7 @@ class HomeDetailPage extends StatelessWidget {
               edge: VxEdge.top,
               arcType: VxArcType.convey,
               child: Container(
-                color: const Color.fromARGB(255, 229, 229, 226),
+                color: const Color(0xffd7d6d6),
                 width: context.screenWidth,
                 child: Column(
                   children: [

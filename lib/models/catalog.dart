@@ -51,7 +51,7 @@ class CatalogModel {
             "https://www.mega.pk/items_images/Apple+iPhone+14+Pro+128GB+Storage+PTA+Approved+Mercantile+Price+in+Pakistan%2C+Specifications%2C+Features_-_23650.webp"),
     Item(
         id: 07,
-        name: "MackBook Pro 16 M2 Max Chip",
+        name: "MackBook Pro 16 M2",
         desc: "16 GB Ram 256 SSD Grey",
         price: 275000,
         color: "#33505a",
@@ -73,7 +73,7 @@ class CatalogModel {
         image: "https://www.mega.pk/items_images/ts_22940.webp"),
     Item(
         id: 10,
-        name: "Apple MacBook Air MLY23",
+        name: "MacBook Air MLY23",
         desc: "13.6_INCH 8/256GB",
         price: 503999,
         color: "#33505a",
@@ -102,7 +102,7 @@ class CatalogModel {
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEe3gMZQ2h43_RiUpynAf5lykYvKGtHynqrQ&usqp=CAU"),
     Item(
         id: 14,
-        name: "Apple Mackbook 16 M1",
+        name: "Mackbook 16 M1",
         desc: "16.2_inch 64GB 1TB_SSD",
         price: 1065549,
         color: "#33505a",
@@ -132,7 +132,7 @@ class CatalogModel {
             "https://www.mega.pk/items_images/Apple+iPhone+11+128GB+PTA++Approved+Price+in+Pakistan%2C+Specifications%2C+Features_-_24354.webp"),
     Item(
         id: 18,
-        name: "Apple iPad Pro M2 Chip",
+        name: "iPad Pro M2 Chip",
         desc: "12.9_inch 8/256Gb",
         price: 449999,
         color: "#33505a",

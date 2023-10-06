@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mart_app/pages/signup_page.dart';
+
 import 'package:mart_app/utils/routes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -36,20 +38,21 @@ class _LoginPageState extends State<LoginPage> {
           key: _formKey,
           child: Column(
             children: [
+              const SizedBox(height: 60,),
               Image.asset(
-                "assets/images/pic1.png",
+                "assets/images/img.png",
                 fit: BoxFit.cover,
-                height: 300,
+                height: 200,
               ),
               const SizedBox(
-                height: 22,
+                height: 40,
               ),
               const Text(
-                "Welcome",
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                "Apple Store",
+                style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold,color: Color(0xff0d1662)),
               ),
               const SizedBox(
-                height: 22,
+                height: 30,
               ),
               Padding(
                 padding:
@@ -57,28 +60,52 @@ class _LoginPageState extends State<LoginPage> {
                 child: Column(
                   children: [
                     TextFormField(
-                      decoration: const InputDecoration(
-                        hintText: "Enter Username",
-                        labelText: "Username",
+                      decoration: InputDecoration(
+                        hintText: 'Enter Email',
+                        label: "Email".text.blue900.make(),
+                        fillColor: const Color(0xffF8F9FA),
+                        filled: true,
+                        prefixIcon: const Icon(Icons.email_outlined,color: Color(0xff323F4B),),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:const BorderSide(color: Color(0xffE4E7EB)),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:const BorderSide(color: Color(0xffE4E7EB)),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {
-                          return "Username cannot be emoty";
+                          return "Email cannot be emoty";
                         }
                         return null;
                       },
                     ),
+                    SizedBox(height: 14,),
                     TextFormField(
                       obscureText: true,
-                      decoration: const InputDecoration(
-                        hintText: "Enter Password",
-                        labelText: "Password",
+                      decoration: InputDecoration(
+                        hintText: 'Enter Password',
+                        label: "Password".text.blue900.make(),
+                        fillColor: const Color(0xffF8F9FA),
+                        filled: true,
+                        prefixIcon: const Icon(Icons.lock_outline,color: Color(0xff323F4B),),
+                        suffixIcon: const Icon(Icons.visibility_off_outlined,color: Color(0xff0d1662),),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:const BorderSide(color: Color(0xffE4E7EB)),
+                          borderRadius: BorderRadius.circular(11),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:const BorderSide(color: Color(0xffE4E7EB)),
+                          borderRadius: BorderRadius.circular(11),
+                        ),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {
                           return "Password cannot be emoty";
                         } else if (value.length < 6) {
-                          return "Username length should be atleast 6";
+                          return "Password length should be atleast 6";
                         }
 
                         return null;
@@ -88,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
                       height: 44,
                     ),
                     Material(
-                      color: Colors.blue,
+                      color: Color(0xff0413a2),
                       borderRadius:
                           BorderRadius.circular(changeButton ? 50 : 8),
                       child: InkWell(
@@ -118,7 +145,33 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
-              )
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Dont have an account?",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Color(0xff203142),
+                      fontFamily: "Rubik Regular",
+                    ),),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const SignUpPage()));
+                    },
+                    child: const Text("Sign Up ",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontFamily: "Rubik Medium",
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff0515a1)
+                      ),),
+                  ),
+
+                ],
+              ),
             ],
           ),
         ),

@@ -36,14 +36,15 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffd7d6d6),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
-        backgroundColor: Colors.deepPurpleAccent,
+        backgroundColor : Color(0xff0d1662),
         child: const Icon(Icons.card_travel_sharp),
       ),
       body: SafeArea(
         child: Container(
-          padding: Vx.m32,
+          padding: Vx.m24,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -121,14 +122,14 @@ class CatalogItem extends StatelessWidget {
               alignment: MainAxisAlignment.spaceBetween,
               buttonPadding: EdgeInsets.zero,
               children: [
-                catalog.price.text.bold.xl.make(),
+                catalog.price.text.blue900.bold.xl2.make(),
                 AddToCart(catalog: catalog)
               ],
             ).pOnly(right: 16)
           ],
         ))
       ],
-    )).blue100.square(150).roundedSM.make().py16();
+    )).white.square(150).roundedSM.make().py8();
   }
 }
 
@@ -139,8 +140,9 @@ class CatalogHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        "Apple Store".text.xl5.bold.make(),
-        "Trending Products".text.xl.make(),
+        "Apple Store".text.xl5.bold.blue900.make(),
+        "Trending Products".text.xl.blue900.make(),
+        const SizedBox(height: 10,)
       ],
     );
   }

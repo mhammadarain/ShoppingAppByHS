@@ -32,6 +32,19 @@ class _AddToCartState extends State<AddToCart> {
             setState(() {});
           }
         },
-        child: isInCart ? const Icon(Icons.done) : const Icon(Icons.add));
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                (Set<MaterialState> states) {
+              if (states.contains(MaterialState.pressed)) {
+                // Change the color when the button is pressed
+                return Color(0xff0d1662); // Replace with your desired color
+              }
+              // Default color when the button is not pressed or hovered
+              return Color(0xffd7d6d6); // Replace with your desired color
+            },
+          ),
+        ),
+        child: isInCart ? const Icon(Icons.done,size: 25,color: Color(0xff0d1662),)
+            : const Icon(Icons.card_travel_rounded,size: 25,color: Color(0xff0d1662),));
   }
 }
